@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Standalone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Unity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\ca45c2faf45bee064a11a522ab6f91d9\resources.rc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Daisy-JUCE-Example\plugin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode\resources.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B4907F2A-878D-3351-B797-D017DAAFFF11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56FABF81-97BF-3DF9-B5EB-B42517DD9A21}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

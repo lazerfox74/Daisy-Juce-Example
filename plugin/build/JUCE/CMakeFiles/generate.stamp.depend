@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/CMake/share/cmake-3.26/Modules/BasicConfigVersion-ExactVersion.cmake.in
+D:/CMake/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake
+D:/CMake/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
+D:/Daisy-JUCE-Example/plugin/JUCE/CMakeLists.txt
+D:/Daisy-JUCE-Example/plugin/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake
+D:/Daisy-JUCE-Example/plugin/JUCE/extras/Build/CMake/JUCEConfig.cmake.in
+D:/Daisy-JUCE-Example/plugin/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake
+D:/Daisy-JUCE-Example/plugin/JUCE/extras/Build/CMake/JUCEUtils.cmake
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/cmake.verify_globs

@@ -1,0 +1,10 @@
+^D:\DAISY-JUCE-EXAMPLE\PLUGIN\BUILD\CMAKEFILES\C90418DD67122CA1D44F1D3C53E98874\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe -SD:/Daisy-JUCE-Example/plugin -BD:/Daisy-JUCE-Example/plugin/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Daisy-JUCE-Example/plugin/build/AUDIO_PLUGIN_EXAMPLE.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

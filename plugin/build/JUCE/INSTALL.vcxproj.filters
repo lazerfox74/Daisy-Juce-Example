@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\38b4b742447e2085b0b2681ae4fe01a3\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B4907F2A-878D-3351-B797-D017DAAFFF11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

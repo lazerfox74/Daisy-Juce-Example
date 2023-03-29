@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6DABE6E-497C-394B-BA4D-525766A44892}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>AudioPluginExample_VST3</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\Debug\VST3\Daisy Plug-in Test.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AudioPluginExample_VST3.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Daisy Plug-in Test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\Release\VST3\Daisy Plug-in Test.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AudioPluginExample_VST3.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Daisy Plug-in Test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\MinSizeRel\VST3\Daisy Plug-in Test.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AudioPluginExample_VST3.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Daisy Plug-in Test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\RelWithDebInfo\VST3\Daisy Plug-in Test.vst3\Contents\x86_64-win\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AudioPluginExample_VST3.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Daisy Plug-in Test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.vst3</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;DEBUG=1;_DEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer="yourcompany";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Daisy Plug-in Test";JucePlugin_Desc="Daisy Plug-in Test";JucePlugin_Version=0.0.1;JucePlugin_VersionString="0.0.1";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted="Daisy_Plug_in_TestAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="Debug";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;DEBUG=1;_DEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer=\"yourcompany\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Daisy Plug-in Test\";JucePlugin_Desc=\"Daisy Plug-in Test\";JucePlugin_Version=0.0.1;JucePlugin_VersionString=\"0.0.1\";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted=\"Daisy_Plug_in_TestAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"Debug\";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>AudioPluginExample_artefacts\Debug\Daisy Plug-in Test_SharedCode.lib;DaisySP\Debug\DaisySP.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/Debug/VST3/Daisy Plug-in Test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/Debug/VST3/Daisy Plug-in Test.vst3/Contents/x86_64-win/Daisy Plug-in Test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer="yourcompany";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Daisy Plug-in Test";JucePlugin_Desc="Daisy Plug-in Test";JucePlugin_Version=0.0.1;JucePlugin_VersionString="0.0.1";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted="Daisy_Plug_in_TestAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="Release";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer=\"yourcompany\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Daisy Plug-in Test\";JucePlugin_Desc=\"Daisy Plug-in Test\";JucePlugin_Version=0.0.1;JucePlugin_VersionString=\"0.0.1\";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted=\"Daisy_Plug_in_TestAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"Release\";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>AudioPluginExample_artefacts\Release\Daisy Plug-in Test_SharedCode.lib;-LTCG;DaisySP\Release\DaisySP.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/Release/VST3/Daisy Plug-in Test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/Release/VST3/Daisy Plug-in Test.vst3/Contents/x86_64-win/Daisy Plug-in Test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer="yourcompany";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Daisy Plug-in Test";JucePlugin_Desc="Daisy Plug-in Test";JucePlugin_Version=0.0.1;JucePlugin_VersionString="0.0.1";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted="Daisy_Plug_in_TestAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="MinSizeRel";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer=\"yourcompany\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Daisy Plug-in Test\";JucePlugin_Desc=\"Daisy Plug-in Test\";JucePlugin_Version=0.0.1;JucePlugin_VersionString=\"0.0.1\";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted=\"Daisy_Plug_in_TestAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"MinSizeRel\";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>AudioPluginExample_artefacts\MinSizeRel\Daisy Plug-in Test_SharedCode.lib;DaisySP\MinSizeRel\DaisySP.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/MinSizeRel/VST3/Daisy Plug-in Test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/MinSizeRel/VST3/Daisy Plug-in Test.vst3/Contents/x86_64-win/Daisy Plug-in Test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer="yourcompany";JucePlugin_ManufacturerWebsite="";JucePlugin_ManufacturerEmail="";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name="Daisy Plug-in Test";JucePlugin_Desc="Daisy Plug-in Test";JucePlugin_Version=0.0.1;JucePlugin_VersionString="0.0.1";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category="Fx";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted="Daisy_Plug_in_TestAU";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR="RelWithDebInfo";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1;NDEBUG=1;_NDEBUG=1;JucePlugin_IsSynth=0;JucePlugin_ManufacturerCode=0x4a756365;JucePlugin_Manufacturer=\"yourcompany\";JucePlugin_ManufacturerWebsite=\"\";JucePlugin_ManufacturerEmail=\"\";JucePlugin_PluginCode=0x44737930;JucePlugin_ProducesMidiOutput=0;JucePlugin_IsMidiEffect=0;JucePlugin_WantsMidiInput=1;JucePlugin_EditorRequiresKeyboardFocus=0;JucePlugin_Name=\"Daisy Plug-in Test\";JucePlugin_Desc=\"Daisy Plug-in Test\";JucePlugin_Version=0.0.1;JucePlugin_VersionString=\"0.0.1\";JucePlugin_VersionCode=0x1;JucePlugin_VSTUniqueID=JucePlugin_PluginCode;JucePlugin_VSTCategory=kPlugCategEffect;JucePlugin_Vst3Category=\"Fx\";JucePlugin_AUMainType='aumf';JucePlugin_AUSubType=JucePlugin_PluginCode;JucePlugin_AUExportPrefix=Daisy_Plug_in_TestAU;JucePlugin_AUExportPrefixQuoted=\"Daisy_Plug_in_TestAU\";JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_CFBundleIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXIdentifier=com.yourcompany.AudioPluginExample;JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode;JucePlugin_AAXProductId=JucePlugin_PluginCode;JucePlugin_AAXCategory=0x00000000;JucePlugin_AAXDisableBypass=0;JucePlugin_AAXDisableMultiMono=0;JucePlugin_VSTNumMidiInputs=16;JucePlugin_VSTNumMidiOutputs=16;JUCE_WEB_BROWSER=0;JUCE_USE_CURL=0;JUCE_VST3_CAN_REPLACE_VST2=0;JUCE_MODULE_AVAILABLE_juce_audio_utils=1;JUCE_MODULE_AVAILABLE_juce_audio_processors=1;JUCE_MODULE_AVAILABLE_juce_gui_extra=1;JUCE_MODULE_AVAILABLE_juce_gui_basics=1;JUCE_MODULE_AVAILABLE_juce_graphics=1;JUCE_MODULE_AVAILABLE_juce_events=1;JUCE_MODULE_AVAILABLE_juce_core=1;JUCE_MODULE_AVAILABLE_juce_data_structures=1;JUCE_MODULE_AVAILABLE_juce_audio_basics=1;JUCE_MODULE_AVAILABLE_juce_audio_formats=1;JUCE_MODULE_AVAILABLE_juce_audio_devices=1;JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;CMAKE_INTDIR=\"RelWithDebInfo\";AudioPluginExample_VST3_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample_artefacts\JuceLibraryCode;D:\Daisy-JUCE-Example\plugin\JUCE\modules;D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;D:\Daisy-JUCE-Example\plugin\DaisySP\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>AudioPluginExample_artefacts\RelWithDebInfo\Daisy Plug-in Test_SharedCode.lib;DaisySP\RelWithDebInfo\DaisySP.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/RelWithDebInfo/VST3/Daisy Plug-in Test.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Daisy-JUCE-Example/plugin/build/AudioPluginExample_artefacts/RelWithDebInfo/VST3/Daisy Plug-in Test.vst3/Contents/x86_64-win/Daisy Plug-in Test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Daisy-JUCE-Example\plugin\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Daisy-JUCE-Example/plugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/Daisy-JUCE-Example/plugin -BD:/Daisy-JUCE-Example/plugin/build --check-stamp-file D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCXXCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeRCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeSystem.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Daisy-JUCE-Example/plugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/Daisy-JUCE-Example/plugin -BD:/Daisy-JUCE-Example/plugin/build --check-stamp-file D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCXXCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeRCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeSystem.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Daisy-JUCE-Example/plugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/Daisy-JUCE-Example/plugin -BD:/Daisy-JUCE-Example/plugin/build --check-stamp-file D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCXXCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeRCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeSystem.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Daisy-JUCE-Example/plugin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/Daisy-JUCE-Example/plugin -BD:/Daisy-JUCE-Example/plugin/build --check-stamp-file D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeCXXCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeRCCompiler.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\3.26.0\CMakeSystem.cmake;D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Daisy-JUCE-Example\plugin\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_1.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_2.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_3.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_4.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_utils.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Standalone.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Unity.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST2.cpp" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Daisy-JUCE-Example\plugin\build\ZERO_CHECK.vcxproj">
+      <Project>{79316091-2147-34B8-9D96-A859BD522ED9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Daisy-JUCE-Example\plugin\build\AudioPluginExample.vcxproj">
+      <Project>{D2C84ABE-1EF5-3EAF-989B-864A3463CB82}</Project>
+      <Name>AudioPluginExample</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Daisy-JUCE-Example\plugin\build\DaisySP\DaisySP.vcxproj">
+      <Project>{93377655-9243-3396-847A-3AF927616BF7}</Project>
+      <Name>DaisySP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

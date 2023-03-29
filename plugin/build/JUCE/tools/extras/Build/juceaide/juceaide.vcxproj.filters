@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\extras\Build\juceaide\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\extras\Build\juce_build_tools\juce_build_tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_gui_basics\juce_gui_basics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_graphics\juce_graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_events\juce_events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_core\juce_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_data_structures\juce_data_structures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\extras\Build\juce_build_tools\juce_build_tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_gui_basics\juce_gui_basics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_graphics\juce_graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_events\juce_events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_core\juce_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_data_structures\juce_data_structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Daisy-JUCE-Example\plugin\JUCE\extras\Build\juceaide\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A7836E7D-36ED-3425-ABBC-4EABEB422D38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8E5B8E58-9A4C-3405-BD98-83616E7BBF3F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

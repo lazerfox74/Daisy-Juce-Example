@@ -1,0 +1,15 @@
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/AudioPluginExample.dir
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/AudioPluginExample_All.dir
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/AudioPluginExample_Standalone.dir
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/AudioPluginExample_VST3.dir
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/INSTALL.dir
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/ALL_BUILD.dir
+D:/Daisy-JUCE-Example/plugin/build/CMakeFiles/ZERO_CHECK.dir
+D:/Daisy-JUCE-Example/plugin/build/JUCE/CMakeFiles/INSTALL.dir
+D:/Daisy-JUCE-Example/plugin/build/JUCE/CMakeFiles/ALL_BUILD.dir
+D:/Daisy-JUCE-Example/plugin/build/JUCE/modules/CMakeFiles/INSTALL.dir
+D:/Daisy-JUCE-Example/plugin/build/JUCE/extras/Build/CMakeFiles/INSTALL.dir
+D:/Daisy-JUCE-Example/plugin/build/JUCE/extras/Build/juceaide/CMakeFiles/INSTALL.dir
+D:/Daisy-JUCE-Example/plugin/build/DaisySP/CMakeFiles/DaisySP.dir
+D:/Daisy-JUCE-Example/plugin/build/DaisySP/CMakeFiles/INSTALL.dir
+D:/Daisy-JUCE-Example/plugin/build/DaisySP/CMakeFiles/ALL_BUILD.dir
