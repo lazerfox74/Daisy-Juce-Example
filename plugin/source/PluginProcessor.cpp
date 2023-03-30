@@ -1,5 +1,6 @@
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+// #include "Wavetable.h"
 
 //==============================================================================
 AudioPluginAudioProcessor::AudioPluginAudioProcessor()
@@ -21,7 +22,8 @@ AudioPluginAudioProcessor::~AudioPluginAudioProcessor()
 //==============================================================================
 const juce::String AudioPluginAudioProcessor::getName() const
 {
-    return JucePlugin_Name;
+    // return JucePlugin_Name;
+    return "wavetable";
 }
 
 bool AudioPluginAudioProcessor::acceptsMidi() const
@@ -92,8 +94,17 @@ void AudioPluginAudioProcessor::prepareToPlay (double sampleRate, int samplesPer
 	osc.Init(sampleRate);
 	noteMidi = 0.0f;
 	noteVal = 0.f;
+    freq = 50.f;
 	ratio = 2.f;
 	index = 0.1f;
+
+    morph = 0.0;
+
+    myTable.setTable(0);
+    // Wavetable myTable(1024,48,30.f);
+
+    
+
 }
 
 void AudioPluginAudioProcessor::releaseResources()
@@ -145,46 +156,23 @@ void AudioPluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
         buffer.clear (i, 0, buffer.getNumSamples());
 
 
-	// Handle some MIDI
-	int time;
-	juce::MidiMessage m;
-	for (juce::MidiBuffer::Iterator i (midiMessages); i.getNextEvent(m, time);)
-	{
-		if (m.isNoteOn())
-		{
-			noteMidi = m.getNoteNumber();
-		}
-		else if (m.isController())
-		{
-			switch(m.getControllerNumber())
-			{
-			case 1:
-				index = (m.getControllerValue() / 127.f);
-				break;
-			case 2:
-			case 91: // 91 is the first CC knob on the old oxygen8 v2 I have sitting here...
-				ratio = 1.f + ((m.getControllerValue() / 127.f) * 11.f);
-				break;
-			default:
-				break;
-			}
-		}
-	}
-
-	float note = daisysp::fclamp(noteMidi + noteVal, 0.0, 127.0);
-	osc.SetIndex(index);
-	osc.SetRatio(ratio);
 	// Process loop
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
         juce::ignoreUnused (channelData);
         // ..do something to the data...
-		osc.SetFrequency(daisysp::mtof(note));
+		// osc.SetFrequency(daisysp::mtof(note));
+
+        myTable.setFreq(freq);
+        myTable.setMorph(morph);
+
+
+
 		if (channel == 0) {
 			for (size_t i = 0; i < buffer.getNumSamples(); i++)
 			{
-				channelData[i] = osc.Process();
+				channelData[i] = myTable.updateTable();
 			}
 		}
     }

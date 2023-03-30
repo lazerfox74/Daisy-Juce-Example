@@ -2,6 +2,7 @@
 
 #include "PluginProcessor.h"
 
+
 //==============================================================================
 class AudioPluginAudioProcessorEditor  : public juce::AudioProcessorEditor,
 	                                     private juce::Slider::Listener
@@ -14,6 +15,8 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
 
+    // Wavetable mywaveTable;
+
 private:
 	void sliderValueChanged(juce::Slider* slider) override; 
     // This reference is provided as a quick way for your editor to
@@ -21,6 +24,7 @@ private:
     AudioPluginAudioProcessor& processorRef;
 
 	juce::Slider oscFreq; // [1]
+    juce::Slider oscMorph;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioPluginAudioProcessorEditor)
 };

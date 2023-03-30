@@ -26,6 +26,9 @@ project(AUDIO_PLUGIN_EXAMPLE VERSION 0.0.1)
 add_subdirectory(JUCE)                    # If you've put JUCE in a subdirectory called JUCE
 add_subdirectory(DaisySP)
 
+# Add all the source files to the project
+
+
 # If you are building a VST2 or AAX plugin, CMake needs to be told where to find these SDKs on your
 # system. This setup should be done before calling `juce_add_plugin`.
 
@@ -73,7 +76,9 @@ target_sources(AudioPluginExample
         source/PluginEditor.cpp
         source/PluginEditor.h
         source/PluginProcessor.cpp
-        source/PluginProcessor.h)
+        source/PluginProcessor.h
+        source/Wavetable.h
+        source/Wavetable.cpp)
 
 # `target_compile_definitions` adds some preprocessor definitions to our target. In a Projucer
 # project, these might be passed in the 'Preprocessor Definitions' field. JUCE modules also make use
@@ -113,3 +118,5 @@ target_link_libraries(AudioPluginExample
         juce::juce_recommended_lto_flags
         juce::juce_recommended_warning_flags
         DaisySP)
+
+

@@ -18,10 +18,25 @@ AudioPluginAudioProcessorEditor::AudioPluginAudioProcessorEditor (AudioPluginAud
 	oscFreq.setTextValueSuffix(" Frequency");
 	oscFreq.setValue(1.0);
 
-	// Add Slider to the editor
+	//setup morph slider object;
+	oscMorph.setSliderStyle(juce::Slider::LinearBarVertical);
+	oscMorph.setRange(0.0, 8, 0.001);
+	oscMorph.setTextBoxStyle(juce::Slider::NoTextBox, false, 90, 0);
+	oscMorph.setPopupDisplayEnabled(true, false, this);
+	oscMorph.setTextValueSuffix(" Morph");
+	oscMorph.setValue(0.0);
+
+
+	// Add Sliders to the editor
 	addAndMakeVisible(&oscFreq);
-	// Add Listener for slider
+
+	addAndMakeVisible(&oscMorph);
+
+	// Add Listeners for sliders
 	oscFreq.addListener(this);
+
+	oscMorph.addListener(this);
+
 }
 
 AudioPluginAudioProcessorEditor::~AudioPluginAudioProcessorEditor()
@@ -46,9 +61,12 @@ void AudioPluginAudioProcessorEditor::resized()
     // subcomponents in your editor..
 	// sets the position and size of the slider with arguments (x, y, width, height)
 	oscFreq.setBounds(40, 30, 20, getHeight() - 60);
+	oscMorph.setBounds(80,30,20,getHeight() - 60);
 }
 
 void AudioPluginAudioProcessorEditor::sliderValueChanged(juce::Slider* slider)
 {
-	processorRef.noteVal = oscFreq.getValue();
+	// processorRef.noteVal = oscFreq.getValue();
+	processorRef.freq = oscFreq.getValue();
+	processorRef.morph = oscMorph.getValue();
 }

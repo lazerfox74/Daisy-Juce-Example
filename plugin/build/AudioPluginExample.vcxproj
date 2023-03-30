@@ -278,6 +278,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\Daisy-JUCE-Example\plugin\source\PluginEditor.h" />
     <ClCompile Include="D:\Daisy-JUCE-Example\plugin\source\PluginProcessor.cpp" />
     <ClInclude Include="D:\Daisy-JUCE-Example\plugin\source\PluginProcessor.h" />
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\source\Wavetable.h" />
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\source\Wavetable.cpp" />
     <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_utils.cpp" />
     <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_utils\juce_audio_utils.h" />
     <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_utils\juce_audio_utils.cpp" />

@@ -7,6 +7,9 @@
     <ClCompile Include="D:\Daisy-JUCE-Example\plugin\source\PluginProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Daisy-JUCE-Example\plugin\source\Wavetable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -49,6 +52,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Daisy-JUCE-Example\plugin\source\PluginProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Daisy-JUCE-Example\plugin\source\Wavetable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\Daisy-JUCE-Example\plugin\JUCE\modules\juce_audio_utils\juce_audio_utils.h">

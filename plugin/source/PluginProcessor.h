@@ -3,6 +3,10 @@
 #include <juce_audio_processors/juce_audio_processors.h>
 #include "daisysp.h"
 
+#include "Wavetable.h"
+
+
+
 //==============================================================================
 class AudioPluginAudioProcessor : public juce::AudioProcessor
 {
@@ -43,8 +47,11 @@ public:
 	void getStateInformation(juce::MemoryBlock& destData) override;
 	void setStateInformation(const void* data, int sizeInBytes) override;
 
-	float noteVal, noteMidi;
+	float noteVal, noteMidi,freq,tableMorph, morph;
 	float ratio, index;
+
+	Wavetable myTable = Wavetable(48000,4,100);
+
 
 private:
 	daisysp::Fm2 osc;
